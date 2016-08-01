@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>EaselJS: Sprite Sheet Example</title>
+
+	<link href="css/shared.css" rel="stylesheet" type="text/css"/>
+	<link href="css/examples.css" rel="stylesheet" type="text/css"/>
+	<script src="js/examples.js"></script>
+	<script src="js/game.js"></script>
+
+	<script src="libs/preloadjs-NEXT.min.js"></script>
+
+	<script src="libs/easeljs-NEXT.combined.js"></script>
+    
+    <script src="libs/jquery-3.1.0.min.js"></script>
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+	  http://code.createjs.com -->
+	  
+<!-- 	<a id="link1" href= "https://www.google.com/">Click Here</a> -->
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+
+</head>
+
+<body onload="init();">
+
+<header>
+<!-- <header class="EaselJS">  -->
+ 
+<h2>Donation Run - Animals</h2>
+
+	<p>
+	<strong>Instructions:</strong>
+		Click on the game to fly higher up and collect the puppies and dog bone treats. 
+		If you collect 40, you'll be able to adopt puppies and bring them home. Click on the link on the pop-up when you get it, you'll be able to help many animals for FREE! Spread this website and game to other people to help those in need.
+	
+	</p>
+ 
+</header>
+
+<h3>Score: <span id="score"></span></h3>    
+    
+<div>
+	<canvas id="animal" width="960" height="400"></canvas>
+</div>
+
+<!-- Trigger/Open The Modal -->
+<!-- 
+<button id="myBtn">You can help too</button>
+ -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close">×</span>
+    
+<p>
+Now that you've played the game, you can actually help in real life! Click on the link below to donate for FREE! Refresh the page to play again and get even more donation links. The links can also be found on our homepage.
+</p>
+<p>
+<a href='http://www.nongmoproject.org/learn-more/' id='link_content' >Open the link in a new tab to help!</a>
+
+<link media="screen" rel="stylesheet" href="colorbox.css" />
+ 
+</p>
+  
+ 
+  </div>
+
+</div>
+</body>
+</html>
